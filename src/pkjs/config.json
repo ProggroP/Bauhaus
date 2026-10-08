@@ -1,0 +1,134 @@
+[
+  {
+    "type": "heading",
+    "defaultValue": "Bauhaus"
+  },
+  {
+    "type": "text",
+    "defaultValue": "The time as a composition of circle, square and line."
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Composition"
+      },
+      {
+        "type": "select",
+        "messageKey": "STYLE",
+        "label": "Style",
+        "description": "Mondrian: grid and colour fields. Albers: nested squares. Moholy-Nagy: diagonals and arcs.",
+        "defaultValue": "0",
+        "options": [
+          { "label": "Mondrian", "value": "0" },
+          { "label": "Albers", "value": "1" },
+          { "label": "Moholy-Nagy", "value": "2" }
+        ]
+      },
+      {
+        "type": "select",
+        "messageKey": "RHYTHM",
+        "label": "New picture",
+        "description": "How often the composition is redrawn from scratch. The time itself always moves.",
+        "defaultValue": "2",
+        "options": [
+          { "label": "Every minute", "value": "0" },
+          { "label": "Hourly", "value": "1" },
+          { "label": "Daily", "value": "2" },
+          { "label": "Never", "value": "3" }
+        ]
+      },
+      {
+        "type": "select",
+        "messageKey": "GRID",
+        "label": "Grid",
+        "description": "The black rules between the fields. Mondrian style only.",
+        "defaultValue": "2",
+        "options": [
+          { "label": "Off", "value": "0" },
+          { "label": "Thin", "value": "1" },
+          { "label": "Bold", "value": "2" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Colour"
+      },
+      {
+        "type": "select",
+        "messageKey": "PALETTE",
+        "label": "Palette",
+        "description": "The watch renders yellow as a pale cream. Mono avoids the problem entirely, Night puts the colours on black.",
+        "defaultValue": "0",
+        "options": [
+          { "label": "Primaries", "value": "0" },
+          { "label": "Muted", "value": "1" },
+          { "label": "Mono", "value": "2" },
+          { "label": "Night", "value": "3" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Legibility"
+      },
+      {
+        "type": "select",
+        "messageKey": "READABILITY",
+        "label": "Numerals",
+        "defaultValue": "2",
+        "options": [
+          { "label": "Off", "value": "0" },
+          { "label": "Small", "value": "1" },
+          { "label": "Large", "value": "2" }
+        ]
+      },
+      {
+        "type": "toggle",
+        "messageKey": "RIM_ARC",
+        "label": "Minute rule",
+        "description": "A line that travels once around the edge over the course of the hour.",
+        "defaultValue": true
+      },
+      {
+        "type": "toggle",
+        "messageKey": "ANIMATE",
+        "label": "Transitions",
+        "description": "On each minute the old number collapses and the new one grows back out.",
+        "defaultValue": true
+      },
+      {
+        "type": "toggle",
+        "messageKey": "SHOW_DATE",
+        "label": "Date",
+        "defaultValue": true
+      },
+      {
+        "type": "select",
+        "messageKey": "EXTRA",
+        "label": "Extra",
+        "description": "A narrow bar along the bottom edge.",
+        "defaultValue": "0",
+        "options": [
+          { "label": "Off", "value": "0" },
+          { "label": "Steps", "value": "1" },
+          { "label": "Battery", "value": "2" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save"
+  }
+]
